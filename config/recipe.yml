@@ -22,22 +22,20 @@ modules:
     install:
       # - micro
       # - starship
-       - fish
-       - iscsi-initiator-utils
-       - kf6-kimageformats
-      # - btop
       # - gamescope
       # - steam
       # - mangohud
+       - fish
+       - iscsi-initiator-utils
+       - kf6-kimageformats
        - corectrl
-       
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
        - mesa-va-drivers-freeworld
-       
+
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -46,14 +44,13 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-         - org.mozilla.firefox
-        # - org.gnome.Loupe
-        - com.github.johnfactotum.Foliate
-        - com.github.zocker_160.SyncThingy
-        - io.mpv.Mpv
-        - org.keepassxc.KeePassXC
-        - org.mozilla.Thunderbird
-        
+        # - org.mozilla.firefox
+         - com.github.johnfactotum.Foliate
+         - com.github.zocker_160.SyncThingy
+         - io.mpv.Mpv
+         - org.keepassxc.KeePassXC
+         - org.mozilla.Thunderbird
+         
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
