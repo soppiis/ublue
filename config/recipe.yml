@@ -22,13 +22,14 @@ modules:
     install:
       # - micro
       # - starship
-      # - gamescope
-      # - steam
-      # - mangohud
+       - gamescope
+       - steam
+       - mangohud
        - fish
        - iscsi-initiator-utils
        - kf6-kimageformats
        - corectrl
+       
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -44,12 +45,14 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        # - org.mozilla.firefox
+         - org.mozilla.firefox
          - com.github.johnfactotum.Foliate
          - com.github.zocker_160.SyncThingy
          - io.mpv.Mpv
          - org.keepassxc.KeePassXC
          - org.mozilla.Thunderbird
+         - org.gnome.World.PikaBackup
+         - org.kde.okular
          
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
