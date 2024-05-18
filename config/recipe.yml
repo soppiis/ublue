@@ -4,7 +4,7 @@ name: ublue-kinoite
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/bazzite
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -22,9 +22,9 @@ modules:
     install:
       # - micro
       # - starship
-       - gamescope
+      # - gamescope
       # - steam
-       - mangohud
+      # - mangohud
        - zsh
        - iscsi-initiator-utils
        - kf6-kimageformats
